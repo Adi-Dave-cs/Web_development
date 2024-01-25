@@ -1,0 +1,86 @@
+:root
+{
+    --font : cursive;
+    --sec-font : inhabits;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    perspective: 1000px;
+}
+
+#main
+{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: all 1s ease;
+    background: url(https://images.unsplash.com/photo-1531904300735-5f40721f712f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#overlay
+{
+    height: 100%;
+    width: 100%;
+    transition: all 3s ease;
+    background-color: rgba(0, 0, 0, 0.539);
+}
+
+/* #overlay:hover{
+    transform: translateY(-900px);
+} */
+
+#center
+{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10%;
+    backdrop-filter: blur(7px);
+    border-radius: 25px;
+    border : 2px solid rgba(255, 255, 255, 0.075);
+}
+
+#overlay h1{
+    color: white;
+    font-size: 70px ;
+    letter-spacing: 15px;
+    font-family: var(--sec-font);
+}
+
+#overlay #line
+{
+    background-color: white;
+    height: 2px;
+    width : 400px;
+}
+
+#overlay button
+{
+    background-color:  transparent;
+    border-color: #fff;
+    padding: 2px;
+    width : 200px;
+    color : #fff;
+    height: 10%;
+    font-family: var(--font);   
+    transition: all 1s ease;
+}
+
+#overlay button:hover{
+    height: 10%;
+    padding: 2px;
+    width : 200px;
+    background-color: white;
+    color : black;
+    font-family: var(--sec-font);
+    letter-spacing: 5px;
+}

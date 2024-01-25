@@ -1,0 +1,149 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container
+{
+    border: 2px solid white;
+    width: 200px;
+    height: 200px;
+    animation : rotate 2s ease-out infinite;
+    filter: url("#gooey");
+    position: relative;
+}
+
+@keyframes rotate {
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    50%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.liquid
+{
+    position : absolute;
+    width : 10vw;
+    height: 9vh;
+    border-radius: 50%;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(to left,cyan , white);
+}
+
+#one
+{
+    animation: animate1 4s linear infinite;
+}
+
+#two
+{
+    animation: animate2 4s linear infinite;
+}
+
+#three
+{
+    animation: animate3 4s linear infinite;
+}
+
+#four
+{
+    animation: animate4 4s linear infinite;
+}
+
+
+@keyframes rotate {
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    50%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animate1 {
+    0%
+    {
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    100%
+    {
+        top:0%;
+        left:0%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@keyframes animate2 {
+    0%
+    {
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    100%
+    {
+        top:0%;
+        left:100%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@keyframes animate3 {
+    0%
+    {
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    100%
+    {
+        top:100%;
+        left:0%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@keyframes animate4 {
+    0%
+    {
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    100%
+    {
+        top:100%;
+        left:100%;
+        transform: translate(-50%,-50%);
+    }
+}

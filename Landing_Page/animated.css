@@ -1,0 +1,142 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: beige;
+   
+}
+
+#main
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+#brand
+{
+    font-family: inhabits;
+    position: absolute;
+    top : 10%;
+    left: 15%;
+    transition: all 2s ease;
+}
+
+#one
+{
+    position: absolute;
+    top : 50%;
+    font-weight: bolder;
+    font-size: xx-large;
+    animation: rtol 2s linear forwards;
+}
+
+#two
+{
+    animation: rtol 3s linear forwards;
+    position: absolute;
+    top : 55%;
+    font-weight: bolder;
+    color: aqua;
+    font-size: xx-large;
+}
+
+#three
+{
+    animation: rtol 4s linear forwards;
+    position: absolute;
+    top : 60%;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#line1
+{
+    top: 45%;
+    position: absolute;
+    background-color: beige;
+    width: 100vw;
+    height: 0.5vh;
+    animation: rtol 5s linear forwards;
+}
+
+#line2
+{
+    top: 70%;
+    position: absolute;
+    background-color: beige;
+    width: 100vw;
+    height: 0.5vh;
+    animation: rtol 5s linear forwards;
+
+}
+
+#first
+{
+    position: absolute;
+    left: 60%;
+    height: 100vh;
+    width: 15vw;
+    background-color: rgb(0, 255, 115);
+}
+
+#second
+{
+    position: absolute;
+    left : 62%;
+    font-family: inhabits;
+    animation : tb 5s linear forwards;
+}
+
+#second button
+{
+    color : white;
+    background-color: rgb(255, 0, 234);
+    border-color: transparent;
+    filter: blur(2px);
+    transition: all 2s ease;
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vw;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#second button:hover
+{
+    border-color: transparent;
+    padding: 2px;
+    border-radius: 20px;
+    color : black;
+    background-color: white;
+    filter: blur(0px);
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#second h2{
+    color: black;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+@keyframes rtol {
+
+    from
+    {
+        left:100%;
+    }
+   to{
+        left:0%;
+   }
+}
+
+@keyframes tb {
+    from{
+        top:0%;
+    }
+    to{
+        top:55%;
+    }
+}
+

@@ -1,0 +1,207 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#main
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+#left
+{
+    width: 70vw;
+    position: absolute;
+    left: 0;
+    height: inherit;
+    clip-path: polygon(0% 0%, 100% 0%,50% 100%, 0% 100%);
+    background-position: center;
+    background-size: cover;
+    /* background-color: transparent; */
+    background-image: url(https://images.unsplash.com/photo-1446292267125-fecb4ecbf1a5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#right
+{
+    width: 70vw;
+    right:0;
+    position: absolute;
+    height: inherit;
+    clip-path: polygon(50% 0%,100% 0%,100% 100%,0% 100%);
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#navleft
+{
+    margin-top : 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    color: white;
+    font-family:"8-bit HUD Regular";
+    font-size:  70%;
+    font-weight: bolder;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 1s ease;
+}
+
+a:hover{
+    font-size: 150%;
+}
+
+#logo
+{
+    margin-left: 5%;
+    background-color: transparent;
+    background-size: cover;
+    background-image: url('encyclopedia.png');
+    width: 30px;
+    height: 30px;
+}
+
+
+#navright
+{
+    margin-top : 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    font-family:"8-bit HUD Regular";
+    font-size:  70%;
+    font-weight: bolder;
+    margin-left: 70%;
+    align-items: center;
+}
+
+#navright a{
+    text-decoration: none;
+    color: rgb(175, 57, 57);
+    transition: all 1s ease;
+}
+
+#navright a:hover{
+    font-size: 130%;
+}
+#navright #menu
+{
+    border-radius: 50%;
+    padding: 10px;
+    border : 3px solid white;
+    transform : rotate(90deg);
+}
+
+#left #plantDescription
+{
+    position: absolute;
+    top : 50%;
+    left : 40%;
+    transform: translate(-50%,-50%);
+    font-size: 15vh;
+    letter-spacing: 0.7vw;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+#LearnMore
+{   
+    font-size: 5vh;
+    padding : 2%;
+    border-radius : 2vw;
+    font-family: "Consolas";
+    transition: all 1s ease;
+}
+#LearnMore:hover
+{
+    letter-spacing: 5px;
+    transform: scale(1.2);
+}
+#left #plantDescription #LearnMore
+{
+    background-color: rgba(0, 0, 0, 0.308);
+    border : 3px solid white;
+    color : white;
+}
+
+
+#right #plantDescription
+{
+    position: absolute;
+    top : 50%;
+    left : 65%;
+    transform: translate(-50%,-50%);
+    font-size: 15vh;
+    letter-spacing: 0.7vw;
+    color: rgb(175, 57, 57);
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+#right #plantDescription #LearnMore
+{
+    background-color: rgba(247, 244, 244, 0.425);
+    border : 3px solid white;
+    color : rgb(175, 57, 57);
+}
+
+#end
+{
+    position: absolute;
+    top : 90%;
+    width : 40vw;
+    height :10vh;
+    display: flex;
+    align-items: center;
+    gap : 2%;
+}
+
+#left #end
+{
+    justify-content: center;
+}
+
+#right #end
+{
+    left : 50%;
+}
+#circle
+{
+    width: 30px;
+    height:30px;
+    border-radius:50%;
+    transition: all 0.6s ease;
+}
+
+#left #circle
+{
+    background-color: white;
+    opacity: 0.4;
+
+}
+
+#left #circle:hover
+{
+    opacity: 1;
+
+}
+
+#right #circle
+{
+    background-color : rgb(175, 57, 57);
+    opacity: 0.4;
+}
+
+#right #circle:hover
+{
+    background-color : rgb(94, 31, 31);
+    opacity: 1;
+}

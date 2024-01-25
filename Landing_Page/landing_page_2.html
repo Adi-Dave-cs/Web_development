@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing_2.css">
+    <title>Landing_2</title>
+    <script>
+        let count = 0;
+        function hover() {
+            // console.log(description);
+            if(count%2 == 0){
+                document.getElementById('menu').innerHTML = 'X';
+            }
+            else{
+                document.getElementById('menu').innerHTML = '|||';
+            }
+            count+=1;
+            console.log(count);
+        }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="navleft">
+                <div id="logo"></div>
+                <div id="home"><a href="">Home</a></div>
+                <div id="about"><a href="">About</a></div>
+                <div id="contact"><a href="">Contact</a></div>
+            </div>
+            <div id="plantDescription">
+                <div id="namePlant">Aloe Vera</div>
+                <button id="LearnMore">Learn More &#8594;</button>
+            </div>
+            <div id="end">
+                <div id="circle"></div>
+                <div id="circle"></div>
+                <div id="circle"></div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="navright">
+                <div id="enc"><a href="">Encyclopedia</a></div>
+                <div id="menu"  onclick="hover()"><a href="">|||</a></div>
+            </div>
+            <div id="plantDescription">
+                <div id="namePlant">Cactus</div>
+                <button id="LearnMore">Learn More &#8594;</button>
+            </div>
+            <div id="end">
+                <div id="circle"></div>
+                <div id="circle"></div>
+                <div id="circle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

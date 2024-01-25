@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main
+{
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard
+{
+    width: 80vw;
+    height: 60vh;
+    border-radius: 25px;
+    border : 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 6px 2px rgb(255, 255, 0);
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns:  repeat(5,1fr);
+}
+
+.grid-item {
+    margin:5px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 1px gray;
+    border: 1px solid gray; /* Border for the grid items */
+}
+
+.one
+{
+    transition: all 1s ease;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(255, 107, 243);
+}
+
+.one:hover{
+    transform: scale(1.2);
+}
+
+
+.two
+{
+    transition: all 1s ease;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-color: cornflowerblue;
+}
+
+.two:hover{
+    transform: scale(1.2);
+}
+
+.three
+{
+    background-color: rgb(255, 0, 0);
+    transition: all 1s ease;
+}
+
+.three:hover{
+    transform: scale(1.2);
+}
+
+.four
+{
+    background-color: rgb(0, 255, 0);
+    transition: all 1s ease;
+}
+
+.four:hover{
+    transform: scale(1.2);
+}
+
+.five
+{
+    background-color: rgb(0, 0, 255);
+    transition: all 1s ease;
+}
+
+.five:hover{
+    transform: scale(1.2);
+}
