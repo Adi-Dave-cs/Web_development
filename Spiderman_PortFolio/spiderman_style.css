@@ -1,0 +1,538 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "mightyspidey";
+    --border-radius:1rem;
+}
+
+#main
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom , red ,rgb(0, 0, 0));
+}
+
+@media screen and (max-width:425px){
+
+nav{
+    margin:0;
+    padding: 0;
+    top:0%;
+    position: absolute;
+    width : 100vw;
+    height: 12vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav img{
+    width : 10%;
+    height: 75%;
+    border-radius: 50%;
+    margin-top : 4%;
+    margin-left : 2%;
+}
+
+#details
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap : 2vw;
+    list-style: none;
+    font-size: 1.4vh;
+    margin-right: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration:line-through;
+}
+
+.active
+{
+    height:8vh;
+    background:linear-gradient(to bottom,cyan,black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+#spiderman__title
+{
+    position : absolute;
+    animation: bottomup 3s linear forwards;
+    color: white;
+    font-size: 4vh;
+}
+
+@keyframes bottomup {
+    from
+    {
+        bottom:0%;
+    }
+    to{
+        bottom : 30%;
+    }
+}
+
+#spiderman__photo
+{
+    position: absolute;
+    background:url('./spiderman-removebg-preview.png');
+    background-repeat: no-repeat;
+    right: 0%;
+    width : 40vh;
+    background-size: cover;
+    height: 100vh;
+}
+
+#peter__photo
+{
+    position: absolute;
+    background:url('./tobey_maguire-removebg-preview.png');
+    background-repeat: no-repeat;
+    top: 10%;
+    bottom:0%;
+    width : 30vw ;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    border-radius: 20%;
+    border-bottom: 4px solid black;
+    transition: all 2s linear;
+}
+
+
+#spiderman__motto
+{
+    position : absolute;
+    animation: bottomup1 2s linear forwards;
+    color: rgb(255, 255, 255);
+    font-size: 3vh;
+    mix-blend-mode:screen;
+}
+
+#about
+{
+    color: white;
+    position: absolute;
+    top:52%;
+    font-size: 2vh;
+}
+
+#introduction
+{
+    position : absolute;
+    top : 12%;
+    left : 32%;
+    border-radius: 20%;
+    border : 2px solid white;
+    box-shadow: 0 0 5px 2px black;
+    height: 30vh;
+    background: linear-gradient(to bottom,blue,red);
+}
+
+#introduction p{
+    margin: 5%;
+    font-size:xx-small;
+    color: white;
+}
+
+#contact
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border:2px solid white;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 5px black;
+    background: linear-gradient(to bottom,gray,black);
+}
+#contact p{
+    margin:5%;
+    font-size: 1.5vh;
+    color: white;
+}
+
+@keyframes bottomup1 {
+    from
+    {
+        bottom:0%;
+    }
+    to{
+        bottom : 10%;
+    }
+}
+}
+
+
+@media screen and (min-width:426px) and (max-width:768px) {
+
+    nav{
+        margin:0;
+        padding: 0;
+        top:0%;
+        position: absolute;
+        width : 100vw;
+        height: 12vh;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav img{
+        width : 10%;
+        height: 70%;
+        border-radius: 50%;
+        margin-top : 2%;
+        margin-left : 2%;
+    }
+    
+    #details
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap : 2vw;
+        list-style: none;
+        font-size: 2vh;
+        margin-right: 2vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover
+    {
+        text-decoration:line-through;
+    }
+    
+    .active
+    {
+        height:8vh;
+        background:linear-gradient(to bottom,cyan,black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    
+    
+    #spiderman__title
+    {
+        position : absolute;
+        animation: bottomup 3s linear forwards;
+        color: white;
+        font-size: 8vh;
+    }
+    
+    @keyframes bottomup {
+        from
+        {
+            bottom:0%;
+        }
+        to{
+            bottom : 30%;
+        }
+    }
+    
+    #spiderman__photo
+    {
+        position: absolute;
+        background:url('./spiderman-removebg-preview.png');
+        background-repeat: no-repeat;
+        right: 0%;
+        width : 50vh;
+        background-size: cover;
+        height: 100vh;
+    }
+    
+    #peter__photo
+    {
+        position: absolute;
+        background:url('./tobey_maguire-removebg-preview.png');
+        background-repeat: no-repeat;
+        top: 12%;
+        bottom:0%;
+        width : 35vw ;
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        border-radius: 20%;
+        border-bottom: 4px solid black;
+        transition: all 2s linear;
+    }
+    
+    
+    #spiderman__motto
+    {
+        position : absolute;
+        animation: bottomup1 2s linear forwards;
+        color: rgb(255, 255, 255);
+        font-size: 4vh;
+        mix-blend-mode:screen;
+    }
+    
+    #about
+    {
+        color: white;
+        position: absolute;
+        top:54%;
+    }
+    
+    #introduction
+    {
+        position : absolute;
+        top : 12%;
+        left : 40%;
+        border-radius: 20%;
+        border : 2px solid white;
+        box-shadow: 0 0 5px 2px black;
+        height: 40vh;
+        background: linear-gradient(to bottom,blue,red);
+    }
+    
+    #introduction p{
+        margin: 5%;
+        color: white;
+    }
+    
+    #contact
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border:2px solid white;
+        width: 80vw;
+        height: 40vh;
+        border-radius: 25px;
+        box-shadow: 0 0 10px 5px black;
+        background: linear-gradient(to bottom,gray,black);
+    }
+    #contact p{
+        margin:5%;
+    }
+    
+    @keyframes bottomup1 {
+        from
+        {
+            bottom:0%;
+        }
+        to{
+            bottom : 10%;
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    nav{
+        margin:0;
+        padding: 0;
+        top:0%;
+        position: absolute;
+        width : 100vw;
+        height: 12vh;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav img{
+        width : 10%;
+        height: 75%;
+        border-radius: 50%;
+        margin-top : 2%;
+        margin-left : 2%;
+    }
+
+    #details
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap : 2vw;
+        list-style: none;
+        font-size: 2vh;
+        margin-right: 2vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover
+    {
+        text-decoration:line-through;
+    }
+    
+    .active
+    {
+        height:8vh;
+        background:linear-gradient(to bottom,cyan,black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    
+    
+    #spiderman__title
+    {
+        position : absolute;
+        animation: bottomup 3s linear forwards;
+        color: white;
+        font-size: 8vh;
+    }
+    
+    @keyframes bottomup {
+        from
+        {
+            bottom:0%;
+        }
+        to{
+            bottom : 30%;
+        }
+    }
+    
+    #spiderman__photo
+    {
+        position: absolute;
+        background:url('./spiderman-removebg-preview.png');
+        background-repeat: no-repeat;
+        right: 0%;
+        width : 50vh;
+        background-size: cover;
+        height: 100vh;
+    }
+    
+    #peter__photo
+    {
+        position: absolute;
+        background:url('./tobey_maguire-removebg-preview.png');
+        background-repeat: no-repeat;
+        bottom:0%;
+        width : 35vw ;
+        background-size: cover;
+        height: 40vh;
+        border-radius: 20%;
+        border-bottom: 4px solid black;
+        transition: all 2s linear;
+        background-position: center;
+        top : 12%;
+    }
+    
+    
+    #spiderman__motto
+    {
+        position : absolute;
+        animation: bottomup1 2s linear forwards;
+        color: rgb(255, 255, 255);
+        font-size: 4vh;
+        mix-blend-mode:screen;
+    }
+    
+    #about
+    {
+        color: white;
+        position: absolute;
+        top:54%;
+        font-size: 2.5vh;
+
+    }
+    
+    #introduction
+    {
+        position : absolute;
+        top : 12%;
+        left : 40%;
+        border-radius: 20%;
+        border : 2px solid white;
+        box-shadow: 0 0 5px 2px black;
+        height: 40vh;
+        background: linear-gradient(to bottom,blue,red);
+    }
+    
+    #introduction p{
+        margin: 5%;
+        font-size: 2vh;
+        color: white;
+    }
+    
+    #contact
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border:2px solid white;
+        width: 80vw;
+        height: 40vh;
+        border-radius: 25px;
+        box-shadow: 0 0 10px 5px black;
+        background: linear-gradient(to bottom,gray,black);
+    }
+    #contact p{
+        margin:5%;
+        font-size: 3vh;
+        color: white;
+    }
+    
+    @keyframes bottomup1 {
+        from
+        {
+            bottom:0%;
+        }
+        to{
+            bottom : 10%;
+        }
+    }
+    }
+
+   
