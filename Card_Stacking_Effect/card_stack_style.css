@@ -1,0 +1,71 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#main
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white,black);
+}
+
+.card
+{
+    width: 50vw;
+    height: 60vh;
+    border : 2px double black;
+    border-radius: 25px;
+    transform-origin:right center;
+    box-shadow: 0 0 2px 2px rgb(0, 0, 0);
+    transition: all 1s ease;
+}
+
+
+#one
+{
+    background:linear-gradient(to top,white,blue);
+    z-index: 4;
+    position: absolute;
+    transform : rotate(10deg);
+}
+
+#two
+{
+    background:linear-gradient(to top,white,red);
+    z-index: 3;
+    position: absolute;
+
+    transform : rotate(20deg);
+
+}
+
+#three
+{
+    background:linear-gradient(to top,white,green);
+    z-index: 2;
+    position: absolute;
+    transform : rotate(30deg);
+
+}
+
+#four
+{
+    background:linear-gradient(to top,white,yellow);
+    z-index: 1;
+    position: absolute;
+    transform : rotate(45deg);
+
+}
+
+#one:hover,#two:hover,#three:hover,#four:hover
+{
+    transform: scale(1.0);
+    z-index: 5;
+}
