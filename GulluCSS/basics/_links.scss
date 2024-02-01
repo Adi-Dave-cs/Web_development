@@ -1,0 +1,48 @@
+@use './colors' as c;
+
+.link
+{
+    text-decoration: none;
+    transition: all 1s linear;
+    &__underline
+    {
+        text-decoration: underline;
+        transition: all 1s linear;
+        &:hover
+        {
+            transform: scale(1.2);
+            text-decoration: none;
+        }
+    }
+    &__through
+    {
+        text-decoration: line-through;
+        transition: all 1s linear;
+        &:hover
+        {
+            transform: scale(1.2);
+            text-decoration: none;
+        }
+    }
+    &__overline
+    {
+        text-decoration: overline;
+        transition: all 1s linear;
+        &:hover
+        {
+            transform: scale(1.2);
+            text-decoration: none;
+        }
+    }
+    &:hover
+    {
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+}
+
+.link:visited
+{
+    color : c.$visited-link-color;
+}
+

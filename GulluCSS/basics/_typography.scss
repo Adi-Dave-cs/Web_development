@@ -1,0 +1,11 @@
+@use './colors' as c;
+
+$font-size : 1em;
+$font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-weight : bold;
+
+p{
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
