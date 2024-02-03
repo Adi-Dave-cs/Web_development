@@ -1,4 +1,21 @@
 @use './colors' as c;
+@use 'sass:list';
+
+/*
+Sass lists are 1-based. The first list item in a list is at index 1, not 0.
+append(list, value, [separator])	Adds a single value to the end of the list. separator can be auto, comma, or space. auto is default.
+index(list, value) Returns the index position for the value in list.
+is-bracketed(list)	Checks whether the list has square brackets.
+join(list1, list2, [separator, bracketed])	Appends list2 to the end of list1. separator can be auto, comma, or space. auto is default (will use the separator in the first list).
+bracketed can be auto, true, or false. auto is default.
+length(list)	Returns the length of the list.
+list-separator(list)	Returns the list separator used, as a string. Can be either space or comma.
+nth(list, n)	Returns the nth element in the list.
+set-nth(list, n, value)	Sets the nth list element to the value specified.
+zip(lists)	Combines lists into a single multidimensional list.
+*/
+
+
 
 $font-size : 1em;
 $font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
