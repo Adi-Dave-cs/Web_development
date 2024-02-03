@@ -1,0 +1,57 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'mightyspidey';
+    background: linear-gradient(to bottom,rgb(255, 0, 0),rgb(0, 0, 0));
+}
+
+.hello
+{
+    transform-style: preserve-3d;
+    font-size: 50px;
+    transform: rotateX(30deg) rotateZ(10deg);
+}
+
+.layer
+{
+    transform: translateZ(var(--tz));
+
+    $count : 100;
+    @for $i from 0 to $count{
+        &:nth-child(#{$i + 1}){
+            --tz : #{$i* -1px};
+            --light : #{$i * 3% + 10%};
+        }
+    }
+
+    &::after
+    {
+        position: absolute;
+        content: 'HELLO';
+        color: hsl(0, 0%, var(--light));
+        transform: translate(-50%,-50%);
+        animation: anime 2s infinite linear;
+    }
+
+}
+
+@keyframes anime {
+    0%
+    {
+        content: 'HELLO';
+    }
+    50%{
+        content: 'WORLD!';
+    }
+}
