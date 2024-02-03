@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 $primary : rgb(0, 0, 255);
 $secondary : teal;
 $error : red;
@@ -14,3 +16,34 @@ $secondary-navbar-color : magenta;
 $link-color : white;
 $active-link-color:red;
 $visited-link-color : blue;
+
+/*
+color.red() for getting a color’s red channel.
+color.green() for getting a color’s green channel.
+color.hue() for getting a color’s hue.
+color.saturation() for getting a color’s saturation.
+color.lightness() for getting a color’s lightness.
+color.whiteness() for getting a color’s whiteness.
+color.blackness() for getting a color’s blackness.
+color.alpha() for getting a color’s alpha channel.
+color.blackness() for getting a color's blackness;
+color.complement($color) returns the rgb complement of the color
+mix(color1, color2, weight)  A larger weight means that more of color1 should be used.
+A smaller weight means that more of color2 should be used. Default is 50%.
+color.scale() for fluidly scaling a color’s properties.
+color.change() for setting a color’s properties.
+color.darken(color, amount) Creates a darker color of color with an amount between 0% and 100%.
+adjust-hue($color, $degrees) //=> color
+color.desaturate(color, amount);
+color.saturate(color, amount);
+color.opacify(color, amount);
+color.fade-in(color, amount);
+color.transparentize(color, amount);
+color.fade-out(color, amount);
+Increases or decreases the color's hue
+color.adjust($color,
+  $red: null, $green: null, $blue: null,
+  $hue: null, $saturation: null, $lightness: null,
+  $whiteness: null, $blackness: null,
+  $alpha: null)
+*/
