@@ -3,3 +3,19 @@ $animation-fill-mode : forwards;
 $animation-speed : linear;
 $animation-delay : 0s;
 $animation-iteration : 1;
+
+/*
+Sass Introspection
+call(function, arguments...)	Calls a function with arguments, and returns the result
+content-exists()	Checks whether the current mixin was passed a @content block.
+feature-exists(feature)	Checks whether feature is supported by the current Sass implementation.
+function-exists(functionname)	Checks whether the specified function exists.
+global-variable-exists(variablename)	Checks whether the specified global variable exists.
+get-function(functionname, css: false)	Returns the specified function. If css is true, it returns a plain CSS function instead.
+inspect(value)	Returns a string representation of value.
+mixin-exists(mixinname)	Checks whether the specified mixin exists.
+type-of(value)	Returns the type of value. Can be number, string, color, list, map, bool, null, function, arglist.
+unit(number)	Returns the unit associated with a number.
+unitless(number)	Checks whether the specified number has a unit associated with it.
+variable-exists(variablename)	Checks whether the specified variable exists in the current scope.
+*/
