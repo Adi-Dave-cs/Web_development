@@ -8,6 +8,8 @@ map.deep-merge($map1, $map2) Nested map values are also recursively merged.
 map-remove(map, keys...)	Removes the specified keys from map.
 map-values(map)	Returns a list of all values in map.
 map.deep-remove($map, $key, $keys...) If $keys is empty, returns a copy of $map without a value associated with $key.
+map.set($map, $key, $value)
+map.set($map, $keys..., $key, $value) : If $keys are not passed, returns a copy of $map with the value at $key set to $value.
 */
 $breakpoints: (
   'mobile_s': 320px,
