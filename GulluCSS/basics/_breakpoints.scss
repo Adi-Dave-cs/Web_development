@@ -1,4 +1,4 @@
-@use 'sass:map';
+@use 'sass:map' as map;
 /*
 map-get(map, key)	Returns the value for the specified key in the map.
 map-has-key(map, key)	Checks whether map has the specified key. Returns true or false.
@@ -21,3 +21,52 @@ $breakpoints: (
   '4K' : 2560px
 );
 
+
+@mixin mobile_s
+{
+  @media (min-width:map-get($breakpoints,'mobile_s')){
+    @content;
+  }
+}
+
+@mixin mobile_m
+{
+  @media (min-width:map-get($breakpoints,'mobile_m')){
+    @content;
+  }
+}
+
+@mixin mobile_l
+{
+  @media (min-width:map-get($breakpoints,'mobile_l')){
+    @content;
+  }
+}
+
+@mixin tablet
+{
+  @media (min-width:map-get($breakpoints,'tablet')){
+    @content;
+  }
+}
+
+@mixin laptop
+{
+  @media (min-width:map-get($breakpoints,'laptop')){
+    @content;
+  }
+}
+
+@mixin laptop_l
+{
+  @media (min-width:map-get($breakpoints,'laptop_l')){
+    @content;
+  }
+}
+
+@mixin FHD
+{
+  @media (min-width:map-get($breakpoints,'4K')){
+    @content;
+  }
+}
