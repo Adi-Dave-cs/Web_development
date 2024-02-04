@@ -1,5 +1,6 @@
 @use './colors' as c;
 @use 'sass:list';
+@use 'sass:string';
 
 /*
 Sass lists are 1-based. The first list item in a list is at index 1, not 0.
@@ -15,7 +16,17 @@ set-nth(list, n, value)	Sets the nth list element to the value specified.
 zip(lists)	Combines lists into a single multidimensional list.
 */
 
-
+/*
+quote(string)	Adds quotes to string, and returns the result.
+str-index(string, substring)	Returns the index of the first occurrence of the substring within string.
+str-insert(string, string2, index)	Returns string with string2 inserted at the specified index position.
+str-length(string)	Returns the length of string (in characters).
+str-slice(string, start, end)	Extracts characters from string; start at start and end at end, and returns the slice.
+to-lower-case(string)	Returns a copy of string converted to lower case.
+to-upper-case(string)	Returns a copy of string converted to upper case.
+unique-id()	Returns a unique randomly generated unquoted string (guaranteed to be unique within the current sass session).
+unquote(string)	Removes quotes around string (if any), and returns the result.
+*/
 
 $font-size : 1em;
 $font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
