@@ -1,22 +1,25 @@
 @use 'sass:color';
 
-$primary : rgb(0, 0, 255);
-$secondary : teal;
-$error : red;
-$info : bisque;
-$link : white;
-$primary-background-color : black;
-$secondary-background-color:yellow;
-$button-color : rgb(255, 87, 241);
-$color : black;
-$box-shadow-color : gray;
-$border-color : white;
-$primary-navbar-color : blue;
-$secondary-navbar-color : magenta;
-$link-color : white;
-$active-link-color:red;
-$visited-link-color : blue;
-
+$colors : (
+"primary" : rgb(0, 0, 255),
+"secondary" : teal,
+"error" : red,
+"info" : bisque,
+"link" : white,
+"primary-background-color" : black,
+"secondary-background-color":yellow,
+"button-color" : rgb(255, 87, 241),
+"black" : black,
+"gray" : gray,
+"white" : white,
+"blue" : blue,
+"secondary-navbar-color" : magenta,
+"primary-navbar-color" : blue,
+"link-color" : white,
+"active-link-color":red,
+"red":red,
+"visited-link-color": blue
+);
 /*
 color.red() for getting a color’s red channel.
 color.green() for getting a color’s green channel.
