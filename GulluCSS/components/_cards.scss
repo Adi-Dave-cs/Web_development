@@ -1,19 +1,23 @@
-@use 'sass:colors' as cs;
+@use 'sass:color' as cs;
 
+$default-card-width :50vw;
+$default-card-height :40vh;
 .card
 {
     background-color: white;
-    box-shadow: 0 0 0 2px gray;
-    width: 100%;
-    height: 100%;
+    box-shadow: 0 0 5px 5px gray;
+    width: $default-card-width ;
+    height: $default-card-height ;
     transition : all 1s ease;
     &__title
     {
-        color : cs.complement($color: #fff);
+        background-color : cs.invert($color: #fff);
         font-size: large;
-        width:100%;
-        height:10%;
-        top:0%;
+        width: $default-card-width ;
+        height: $default-card-height * 0.25 ;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        color : #fff;
     }
     &:hover
     {
@@ -21,15 +25,13 @@
     }
     &__details
     {
-        color : cs.invert($color: #fff);
-        background-color: cs.mix($color: red, $color: blue, $weight: 0.7);
+        color : cs.invert($color: red);
+        background-color: cs.mix(red, blue, $weight: 0.7);
         font-size: large;
-        width:100%;
-        height:10%;
+        width: $default-card-width ;
+        height: $default-card-height * 0.75 ;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
         top:0%;
-        &:hover{
-            transform: scale(1.2);
-        }
     }
-
 }
