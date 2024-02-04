@@ -4,8 +4,10 @@ map-get(map, key)	Returns the value for the specified key in the map.
 map-has-key(map, key)	Checks whether map has the specified key. Returns true or false.
 map-keys(map)	Returns a list of all keys in map.
 map-merge(map1, map2)	Appends map2 to the end of map1.
+map.deep-merge($map1, $map2) Nested map values are also recursively merged.
 map-remove(map, keys...)	Removes the specified keys from map.
 map-values(map)	Returns a list of all values in map.
+map.deep-remove($map, $key, $keys...) If $keys is empty, returns a copy of $map without a value associated with $key.
 */
 $breakpoints: (
   'mobile_s': 320px,
