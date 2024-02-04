@@ -1,5 +1,5 @@
 @use 'sass:color' as sc;
-@use '../basics/colors' as c;
+@use './basics/colors' as c;
 
 @each $key,$value in c.$colors
 {
@@ -10,15 +10,30 @@
         background-color: $value;
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         ul
         {
+            margin : 2%;
+            border-radius: 25px;
+            padding:0.5em 2em;
             display: flex;
+            list-style: none;
             justify-content: space-evenly;
-            background-color: sc.invert($color: $value);
-            color : sc.complement($color:sc.invert($color: $value));
-            &:hover{
-                transform: scale(1.1);
-                background-color: sc.lighten($color: sc.invert($color: $value), $amount: 20)
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1em;
+            li
+            {
+                align-self: center;
+                transition: all 1.5s ease;
+                padding:2%;
+                background-color: lighten($color: $value, 20%);
+                color : sc.invert(lighten($color: $value, 20%));
+                border-radius: 25%;
+                &:hover
+                {
+                    transform: scale(1.2);
+                }
             }
         }
     }

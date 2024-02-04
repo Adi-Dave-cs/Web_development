@@ -5,7 +5,7 @@ $colors : (
 "blue":blue,
 "green":green,
 "black":black,
-"white":white
+"white":white,
 "magenta":magenta
 );
 /*
@@ -48,21 +48,29 @@ color.adjust($color,
   }
   .bg-#{$key}
   {
+    width: 100%;
+    height: 100%;
     background-color: $value;
   }
   @for $i from 0 to 100
   {
     .bg-#{$key}-opacity-#{$i}
     {
+      width: 100%;
+      height: 100%;
       background-color: $value;
       opacity: #{$i * 1%};
     }
     .bg-#{$key}-lighten-#{$i}
     {
+      width: 100%;
+      height: 100%;
       background-color: mix(white,$value,$i);
     }
     .bg-#{$key}-darken-#{$i}
     {
+      width: 100%;
+      height: 100%;
       background-color: mix(black,$value,$i);
     }
   }
