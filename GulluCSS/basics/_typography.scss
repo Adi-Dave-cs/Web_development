@@ -1,6 +1,7 @@
-@use './colors' as c;
+@use '../basics/colors' as c;
 @use 'sass:list';
 @use 'sass:string';
+@use 'sass:map' as mp;
 
 /*
 Sass lists are 1-based. The first list item in a list is at index 1, not 0.
@@ -35,5 +36,22 @@ $font-weight : bold;
 p{
     font-size: $font-size;
     font-family: $font-family;
+}
+
+$font_sizes:(
+    'xs': 1em,
+    's': 2em,
+    'm': 3em,
+    'l': 4em,
+    'xl': 5em,
+    'xxl': 6em,
+    'xxxl': 7em
+);
+
+@each $k,$v in $font-sizes
+{
+    .#{$k}-font{
+        font-size: map-get($map: $font_sizes, $key:$k );
+    }
 }
 
