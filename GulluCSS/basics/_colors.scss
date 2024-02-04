@@ -1,4 +1,4 @@
-@use 'sass:color';
+@use 'sass:color' as sc;
 
 $colors : (
 "red":red,
@@ -65,13 +65,13 @@ color.adjust($color,
     {
       width: 100%;
       height: 100%;
-      background-color: mix(white,$value,$i);
+      background-color: sc.mix($color1: #fff, $color2:$value, $weight: 0.56);
     }
     .bg-#{$key}-darken-#{$i}
     {
       width: 100%;
       height: 100%;
-      background-color: mix(black,$value,$i);
+      background-color: sc.mix($color1: #000000, $color2:$value, $weight: 0.56);
     }
   }
 
