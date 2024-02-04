@@ -1,24 +1,12 @@
 @use 'sass:color';
 
 $colors : (
-"primary" : rgb(0, 0, 255),
-"secondary" : teal,
-"error" : red,
-"info" : bisque,
-"link" : white,
-"primary-background-color" : black,
-"secondary-background-color":yellow,
-"button-color" : rgb(255, 87, 241),
-"black" : black,
-"gray" : gray,
-"white" : white,
-"blue" : blue,
-"secondary-navbar-color" : magenta,
-"primary-navbar-color" : blue,
-"link-color" : white,
-"active-link-color":red,
 "red":red,
-"visited-link-color": blue
+"blue":blue,
+"green":green,
+"black":black,
+"white":white
+"magenta":magenta
 );
 /*
 color.red() for getting a color’s red channel.
@@ -50,3 +38,33 @@ color.adjust($color,
   $whiteness: null, $blackness: null,
   $alpha: null)
 */
+
+
+@each $key,$value in $colors
+{
+  .text-#{$key}
+  {
+    color : $value;
+  }
+  .bg-#{$key}
+  {
+    background-color: $value;
+  }
+  @for $i from 0 to 100
+  {
+    .bg-#{$key}-opacity-#{$i}
+    {
+      background-color: $value;
+      opacity: #{$i * 1%};
+    }
+    .bg-#{$key}-lighten-#{$i}
+    {
+      background-color: mix(white,$value,$i);
+    }
+    .bg-#{$key}-darken-#{$i}
+    {
+      background-color: mix(black,$value,$i);
+    }
+  }
+
+}
