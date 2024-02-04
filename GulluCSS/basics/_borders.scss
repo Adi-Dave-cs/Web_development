@@ -1,4 +1,15 @@
+@use './colors' as c;
 
 $border-thickness:2px;
 $border-style:solid;
-$border-radius : 0%;
+
+@for $i from 0 to 50{
+    @each $key,$value in c.$colors
+    {
+        .border-#{$key}-#{$i}-percent-radius
+        {
+            border : $border-thickness $border-style $value;
+            border-radius: #{$i * 1%};
+        }
+    }
+}
