@@ -1,0 +1,25 @@
+@use 'sass:color' as sc;
+@use '../basics/colors' as c;
+
+@each $key,$value in c.$colors
+{
+    .navbar-#{$key}
+    {
+        width:100vw;
+        height:15vh;
+        background-color: $value;
+        display: flex;
+        justify-content: space-between;
+        ul
+        {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: sc.invert($color: $value);
+            color : sc.complement($color:sc.invert($color: $value));
+            &:hover{
+                transform: scale(1.1);
+                background-color: sc.lighten($color: sc.invert($color: $value), $amount: 20)
+            }
+        }
+    }
+}
