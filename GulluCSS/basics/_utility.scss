@@ -1,0 +1,127 @@
+@use 'sass:map';
+
+$padding-list : ('p':0,'pt':1,'pr':2,'pb':3,'pl':4);
+$margin-list : 'm','mt','mr','mb', 'ml';
+
+$base_padding : 1%;
+$base_margin : 1%;
+
+@each $prefix,$val in $padding-list
+{
+    @for $i from 0 to 51
+    {
+        @if $i>0
+        {
+            .#{$prefix}-#{$i}-percent
+            {
+                @if $val == 0
+                {
+                    padding : #{$base_padding * $i};
+                }
+                @else if $val == 1
+                {
+                    padding-top : #{$base_padding * $i};
+                }
+                @else if $val == 2
+                {
+                    padding-right : #{$base_padding * $i};;
+                }
+                @else if $val == 3
+                {
+                    padding-bottom : #{$base_padding * $i};;
+                }
+                @else
+                {
+                    padding-left : #{$base_padding * $i};;
+                }
+            }
+        }
+        @else
+        {
+            .#{$prefix}
+            {
+                @if $val == 0
+                {
+                    padding : $base_padding;
+                }
+                @else if $val == 1
+                {
+                    padding-top : $base_padding;
+                }
+                @else if $val == 2
+                {
+                    padding-right : $base_padding;
+                }
+                @else if $val == 3
+                {
+                    padding-bottom : $base_padding;
+                }
+                @else
+                {
+                    padding-left : $base_padding;
+                }
+            }
+        }
+    }
+}
+
+
+
+@each $prefix,$val in $margin-list
+{
+    @for $i from 0 to 51
+    {
+        @if $i>0
+        {
+            .#{$prefix}-#{$i}-percent
+            {
+                @if $val == 0
+                {
+                    margin : #{$base_margin * $i};
+                }
+                @else if $val == 1
+                {
+                    margin-top : #{$base_margin * $i};
+                }
+                @else if $val == 2
+                {
+                    margin-right : #{$base_margin * $i};
+                }
+                @else if $val == 3
+                {
+                    margin-bottom : #{$base_margin * $i};
+                }
+                @else
+                {
+                    margin-left : #{$base_margin * $i};
+                }
+            }
+        }
+        @else
+        {
+            .#{$prefix}
+            {
+                @if $val == 0
+                {
+                    margin : $base_margin;
+                }
+                @else if $val == 1
+                {
+                    margin-top : $base_margin;
+                }
+                @else if $val == 2
+                {
+                    margin-right : $base_margin;
+                }
+                @else if $val == 3
+                {
+                    margin-bottom : $base_margin;
+                }
+                @else
+                {
+                    margin-left : $base_margin;
+                }
+            }
+        }
+    }
+}
