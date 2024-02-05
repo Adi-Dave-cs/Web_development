@@ -1,0 +1,114 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.space
+{
+    top : 50%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    /* box-shadow: 0 0 100px 0px rgb(42, 66, 18); */
+    background:radial-gradient(rgba(0, 128, 0, 0.349),rgba(0, 0, 0, 0.329));
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(75deg) rotateZ(15deg);
+}
+
+.space2
+{
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateZ(15vh) rotateZ(90deg);
+
+    animation:animate 2s linear infinite;
+}
+
+.side
+{
+    position: absolute;
+    width: 75px;
+    height:75px ;
+    border: 2px solid rgba(128, 128, 128, 0.795);
+    border-radius: 10%;
+}
+
+.side:nth-child(1)
+{
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+    background:linear-gradient(to bottom,black,lawngreen);
+}
+
+.side:nth-child(2)
+{
+    transform-origin: top;
+    transform: rotateX(90deg);
+    background:linear-gradient(to top,black,lawngreen);
+}
+
+.side:nth-child(3)
+{
+    transform-origin: left;
+    transform: rotateY(-90deg);
+    background:linear-gradient(to left,black,lawngreen);
+}
+
+.side:nth-child(4)
+{
+    transform-origin: right;
+    transform: rotateY(90deg);
+    background:linear-gradient(to right,black,lawngreen);
+}
+
+.side:nth-child(5)
+{
+    background-color: lawngreen;
+    transform: rotateZ(-90deg);
+    
+}
+
+.side:nth-child(6)
+{
+    background-color: black;
+    transform: translateZ(75px);
+}
+
+@keyframes animate {
+    0%{
+        transform-origin:  center;
+        transform:translateZ(15vh) rotateZ(0deg) ;
+    }
+    50%{
+        transform-origin:  center;
+        transform:translateZ(12vh) rotateZ(180deg);
+    }
+    100%{
+        transform-origin:  center;
+        transform:translateZ(15vh) rotateZ(360deg);
+    }
+    
+}
