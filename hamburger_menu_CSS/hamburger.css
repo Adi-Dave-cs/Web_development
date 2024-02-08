@@ -1,0 +1,120 @@
+:root
+{
+    --p-color:black;
+    --s-color:white;
+    --barwidth:50px;
+    --barheight:8px;
+    --sidewidth : 0px;
+    --gp : 6px;
+    --menu-height : calc(var(--barheight)*3 + var(--gp)*2);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu_icon
+{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin : 10px;
+    gap : var(--gp);
+    transition: all 1s linear;
+}
+.menu_icon::after, .menu_icon::before
+{
+    content: "";
+    background-color:black;
+    width : var(--barwidth);
+    height: var(--barheight);
+    border-radius: 200px;
+}
+.menu_icon input{
+    outline: none;
+    appearance: none;
+    pointer-events: none;
+    content: "";
+    background-color:black;
+    width : var(--barwidth);
+    height: var(--barheight);
+    border-radius: 200px;
+}
+
+.menu_icon input:checked{
+    opacity: 0;
+    width: 0;
+}
+
+
+
+.menu_icon:has(input:checked)::before{
+    transform-origin:  left center;
+    rotate: 45deg;
+    width : calc(var(--menu-height) * 1.41421356237);
+    translate: 0 calc(var(--barheight)/-2);
+
+}
+
+.menu_icon:has(input:checked)::after{
+    transform-origin: left center;
+    translate: 0 calc(var(--barheight)/2);
+    rotate: -45deg;
+    width : calc(var(--menu-height) * 1.41421356237);
+}
+.sidebar
+{
+    background-color: chocolate;
+    width: var(--sidewidth);
+    height: 100vh;
+    transition: all 1s ease;
+}
+
+.menu_icon:has(input:checked)+ .sidebar{
+    --sidewidth : 300px;
+    width: var(--sidewidth);
+}
+
+.menu_icon:has(input:checked)+ .sidebar > ul{
+    --sidewidth : 300px;
+    width: var(--sidewidth);
+}
+
+.menu_icon:has(input:checked)+ .sidebar > ul>li{
+    --sidewidth : 300px;
+    width: var(--sidewidth);
+}
+
+
+ul{
+    list-style: none;
+    position: absolute;
+    width: 0px;
+    background-color: chocolate;
+    display: flex;
+    gap:1em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s ease;
+}
+
+li{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    border-radius: 25px;
+    margin: 0.5em;
+    padding:0.25em;
+    transition: all 1s ease;
+    width: 0px;
+
+}
+
+li:hover
+{
+    background-color: rgb(79, 39, 12) ;
+}
