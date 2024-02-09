@@ -1,0 +1,130 @@
+:root{
+    --btn-width:150px;
+    --btn-height:50px;
+    --border-sz : 4px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to bottom,white,grey);
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn
+{
+    width: var(--btn-width);
+    height: var(--btn-height);
+    background-color: red;
+    color:black;
+    cursor: pointer;
+    position: relative;
+    border : none;
+    /* border-radius: 200px; */
+}
+
+.btn1::before
+{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+    border: var(--border-sz) solid red;
+    transition: all 200ms linear;
+}
+
+.btn1:hover::before, .btn1:focus::before
+{
+    top:calc(var(--border-sz)* -2);
+    right:calc(var(--border-sz)* -2);
+    bottom:calc(var(--border-sz)* -2);
+    left:calc(var(--border-sz)* -2);
+}
+
+
+.btn2::before{
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    top:0;
+    right: 0;
+    bottom:0;
+    left:0;
+    width:0;
+    z-index:-1;
+    transition: all 500ms linear;
+}
+
+.btn2:hover::before, .btn2:focus::before
+{
+    width: inherit;
+}
+
+.btn2{
+    z-index: 1;
+}
+
+
+.btn3::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    top:0;
+    right: 0;
+    bottom:0;
+    left:0;
+    z-index:-1;
+    border-radius: 50%;
+    transform: scale(1.5);
+    transition: all 500ms linear;
+}
+
+.btn3:hover::before, .btn3:focus::before
+{
+    transform:scale(0);
+}
+
+.btn3{
+    overflow: hidden;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.btn4::before{
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    right: 0;
+    bottom:0;
+    left:0;
+    height: var(--border-sz);
+    z-index:-1;
+    transform-origin: top center;
+    transform: scaleX(0);
+    transition: all 500ms linear;
+}
+
+.btn4:hover::before, .btn4:focus::before
+{
+    transform:scaleX(1);
+}
+
+.btn4{
+    overflow: hidden;
+    background-color: red;
+    z-index: 1;
+}
+
