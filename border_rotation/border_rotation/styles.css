@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white,gray);
+}
+
+
+.card
+{
+    width: 40vw;
+    height: 60vh;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.card::after
+{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width:37vw;
+    height:57vh;
+    border-radius: 25px;
+}
+
+.card::before
+{
+    content: "";
+    position: absolute;
+    background-color: white;
+    width:150vw;
+    height:20vh;
+    animation: animate 2s infinite;
+    animation-play-state: play;
+}
+
+.card:hover::before
+{
+    content: "";
+    animation: animate 2s infinite;
+    animation-play-state: play;
+}
+
+@keyframes animate {
+    from
+    {
+        transform: rotateZ(0deg);
+    }
+    to
+    {
+        transform: rotateZ(360deg);
+    }
+}
