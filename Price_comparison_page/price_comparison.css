@@ -28,8 +28,65 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:0.5em;
+    gap:0.6em;
 }
+
+.popular
+{
+    position: absolute;
+    width: 10vw;
+    height: 3vh;
+    text-align: center;
+    background-color: antiquewhite;
+    color: brown;
+    font-family:cursive;
+    left : 50%;
+    transform: translateX(-50%);
+}
+
+.price_card_two:hover .popular
+{
+    height: 3.5vh;
+    border-radius: 25px;
+    border:1px solid var(--bg-price-primary);
+}
+
+.bg_card .price
+{
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.bg_card .type
+{
+    position: absolute;
+    top:24%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bg_card  .price > p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 9vh;
+    font-weight: bolder;
+}
+
+.bg_card  .price > p > span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: bolder;
+}
+
+
+.bg_card  .price > p > sup{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    font-weight: bolder;
+}
+
 
 .price_card_one
 {
@@ -49,12 +106,28 @@ body{
     background-color: var(--bg-price-primary);
 }
 
+.price_card_one:hover .price, .price_card_one:focus .price
+{
+    color : var(--bg-price-secondary);
+}
+
+.price_card_one:hover ul, .price_card_one:focus ul
+{
+    color : var(--bg-price-secondary);
+}
+
+
 .price_card_one:hover > button , .price_card_one:focus > button
 {
+    font-weight: bolder;
     color: var(--bg-price-primary);
     background-color: var(--bg-price-secondary);
 }
 
+.price_card_one:hover .type, .price_card_one:focus .type
+{
+    color : var(--bg-price-secondary)
+}
 
 .price_card_two
 {
@@ -75,10 +148,26 @@ body{
     background-color: var(--bg-price-primary);
 }
 
+.price_card_two:hover .price, .price_card_two:focus .price
+{
+    color : var(--bg-price-secondary);
+}
+
 .price_card_two:hover > button , .price_card_two:focus > button
 {
     color: var(--bg-price-primary);
+    font-weight: bolder;
     background-color: var(--bg-price-secondary);
+}
+
+.price_card_two:hover .type, .price_card_two:focus .type
+{
+    color : var(--bg-price-secondary)
+}
+
+.price_card_two:hover ul, .price_card_two:focus ul
+{
+    color : var(--bg-price-secondary);
 }
 
 
@@ -100,12 +189,27 @@ body{
     background-color: var(--bg-price-primary);
 }
 
+.price_card_three:hover .price, .price_card_three:focus .price
+{
+    color : var(--bg-price-secondary);
+}
+
 .price_card_three:hover > button , .price_card_three:focus > button
 {
+    font-weight: bolder;
     color: var(--bg-price-primary);
     background-color: var(--bg-price-secondary);
 }
 
+.price_card_three:hover .type, .price_card_three:focus .type
+{
+    color : var(--bg-price-secondary)
+}
+
+.price_card_three:hover ul, .price_card_three:focus ul
+{
+    color : var(--bg-price-secondary);
+}
 
 button
 {
@@ -119,4 +223,47 @@ button
     border: none;
     padding:13px 30px;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+.features
+{
+    position: absolute;
+    top:40%;
+    left:2%;
+}
+
+.inc{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inc:hover{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.exc
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: line-through;
+    color:rgba(0, 0, 0, 0.34);
+}
+
+.line
+{
+    width: 80%;
+    height: 1%;
+    background-color: rgba(0, 0, 0, 0.159);
+    position: absolute;
+    top:30%;
+    left:10%;
+    border-radius: 25%;
+}
+
+.line1
+{
+    width: 80%;
+    height: 1%;
+    background-color: rgba(0, 0, 0, 0.159);
+    position: absolute;
+    border-radius: 25%;
+    top:74%;
+    left:10%;
 }
