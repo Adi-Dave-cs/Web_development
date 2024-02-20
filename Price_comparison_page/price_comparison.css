@@ -1,0 +1,122 @@
+:root{
+    --bg-price-primary : rgb(0, 55, 255);
+    --bg-price-secondary:white;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg_card
+{
+    position: relative;
+    width: 96vw;
+    height: 90vh;
+    background-color: azure;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px var(--bg-price-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5em;
+}
+
+.price_card_one
+{
+    position: relative;
+    width: 27vw;
+    height: 80vh;
+    background-color: azure;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px gray;
+    transition: all 1s ease;
+}
+
+.price_card_one:hover, .price_card_one:focus
+{
+    position: relative;
+    transform: scale(1.07);
+    background-color: var(--bg-price-primary);
+}
+
+.price_card_one:hover > button , .price_card_one:focus > button
+{
+    color: var(--bg-price-primary);
+    background-color: var(--bg-price-secondary);
+}
+
+
+.price_card_two
+{
+    position: relative;
+    width: 27vw;
+    height: 80vh;
+    background-color: azure;
+    border-radius: 20px;
+    transition: all 1s ease;
+    box-shadow: 0 0 5px 5px gray;
+}
+
+.price_card_two:hover , .price_card_two:focus
+
+{
+    position: relative;
+    transform: scale(1.07);
+    background-color: var(--bg-price-primary);
+}
+
+.price_card_two:hover > button , .price_card_two:focus > button
+{
+    color: var(--bg-price-primary);
+    background-color: var(--bg-price-secondary);
+}
+
+
+.price_card_three
+{
+    position: relative;
+    width: 27vw;
+    height: 80vh;
+    background-color: azure;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px gray;
+    transition: all 1s ease;
+}
+
+.price_card_three:hover , .price_card_three:focus
+{
+    position: relative;
+    transform: scale(1.07);
+    background-color: var(--bg-price-primary);
+}
+
+.price_card_three:hover > button , .price_card_three:focus > button
+{
+    color: var(--bg-price-primary);
+    background-color: var(--bg-price-secondary);
+}
+
+
+button
+{
+    position: absolute;
+    width: 23vw;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--bg-price-primary);
+    color: white;
+    border: none;
+    padding:13px 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
