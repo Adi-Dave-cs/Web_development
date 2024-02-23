@@ -1,0 +1,55 @@
+:root{
+    --bg-color : aliceblue;
+    --overlay-color:rgb(0, 0, 53);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.complete_bg
+{
+    width: 100vw;
+    height: 300vh;
+    background-color: var(--bg-color) ;
+}
+
+.top_element
+{
+    width: 100vw;
+    height: 100vh;
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 70%);
+    background-color: var(--overlay-color);
+}
+
+.nav_bar
+{
+    width: 100vw;
+    height: 10vh;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav_bar ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:5em;
+    margin-right: 20%;
+    margin-top: 1%;
+}
+.nav_bar ul a{
+    font-family: "Lilita One", sans-serif;
+    text-decoration: none;
+    color:var(--bg-color);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
