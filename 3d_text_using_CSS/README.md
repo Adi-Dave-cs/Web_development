@@ -9,10 +9,11 @@ This project showcases a visually appealing 3D text effect created entirely with
 Layered Approach: The effect is achieved by stacking multiple layers of text and applying different styles to each layer.
 
 # Technologies Used
-HTML
-CSS
-SCSS
-Getting Started
+- HTML
+- CSS
+- SCSS
+
+# Getting Started
 To view the 3D text effect, simply open the index.html file in your web browser.
 
 # Folder Structure
