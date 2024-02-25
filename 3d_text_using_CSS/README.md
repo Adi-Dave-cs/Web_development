@@ -32,6 +32,13 @@ The project was inspired by various CSS tutorials and resources available online
 
 Thank you for exploring the 3D Text with CSS project! If you have any questions or feedback, feel free to reach out.
 
+# Demo image
+
+<img width="300px" height="300px" src='./Screenshot 2024-02-25 182351.png'>
+
+## Authors
+
+- [@Aditya Dave](https://github.com/Adi-Dave-cs)
 
 
 
