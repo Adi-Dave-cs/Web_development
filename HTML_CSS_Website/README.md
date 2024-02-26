@@ -15,7 +15,7 @@ The Cloud Hosting UI website is built using the following technologies:
 - CSS: Styling language for designing the layout and appearance of the website.
 
 # Getting Started
-To explore the Cloud Hosting UI website, simply open the [Cloud_hosting_page.html]('./Cloud_hosting_page.html') file in your web browser. From there, you can navigate through the different sections of the website and interact with the content.
+To explore the Cloud Hosting UI website, simply open the [Cloud_hosting_page.html](./Cloud_hosting_page.html) file in your web browser. From there, you can navigate through the different sections of the website and interact with the content.
 
 # Folder Structure
 - Cloud_hosting_page.html: The main HTML file containing the structure of the website.
