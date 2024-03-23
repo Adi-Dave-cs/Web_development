@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <p class="lead">This is an example for buttons class</p>
+        <button class="btn btn-primary"><p class="lead"><em>b1</em></p></button>
+        <button class="btn btn-secondary"><p class="lead"><em>b2</em></p></button>
+        <button class="btn btn-success"><p class="lead"><em>b3</em></p></button>
+        <button class="btn btn-warning"><p class="lead"><em>b4</em></p></button>
+        <button class="btn btn-info"><p class="lead"><em>b5</em></p></button>
+        <button class="btn btn-dark"><p class="lead text-light"><em>b6</em></p></button>
+        <button class="btn btn-light"><p class="lead"><em>b7</em></p></button>
+        <button class="btn btn-danger"><p class="lead"><em>b8</em></p></button>
+    </div>
+    <div class="w-100"></div>
+    <div class="container-fluid">
+        <p class="lead">This is an example for buttons outline class</p>
+        <button class="btn btn-outline-primary"><p class="lead"><em>b1</em></p></button>
+        <button class="btn btn-outline-secondary"><p class="lead"><em>b2</em></p></button>
+        <button class="btn btn-outline-success"><p class="lead"><em>b3</em></p></button>
+        <button class="btn btn-outline-warning"><p class="lead"><em>b4</em></p></button>
+        <button class="btn btn-outline-info"><p class="lead"><em>b5</em></p></button>
+        <button class="btn btn-outline-dark"><p class="lead text-light"><em>b6</em></p></button>
+        <button class="btn btn-outline-light"><p class="lead text-dark"><em>b7</em></p></button>
+        <button class="btn btn-outline-danger"><p class="lead"><em>b8</em></p></button>
+    </div>
+    <div class="w-100"></div>
+    <div class="container-fluid">
+        <p class="lead">This is an example for active and disabled class</p>
+        <button class="btn btn-primary"><p class="lead"><em>b1</em></p></button>
+        <button class="btn btn-secondary" disabled><p class="lead"><em>b2</em></p></button>
+        <button class="btn btn-danger "><p class="lead"><em>b8</em></p></button>
+    </div>
+    <br>
+    <div class="w-100"></div>
+    <div class="container-fluid bg-primary">
+        <p class="lead"><em class="h1">button group class</em></p>
+        <div class="btn-group">
+            <button class="btn btn-warning">
+                <p class="lead"><em>click me!</em></p>
+            </button>
+            <button class="btn btn-secondary">
+                <p class="lead"><em>click me!</em></p>
+            </button>
+            <button class="btn btn-danger">
+                <p class="lead"><em>click me!</em></p>
+            </button>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="container-fluid bg-info">
+        <p class="lead"><em class="h1">button group class sm</em></p>
+        <div class="btn-group-sm">
+            <button class="btn btn-warning btn-sm">
+                <p class="lead"><em>click me!</em></p>
+            </button>
+            <button class="btn btn-secondary btn-sm">
+                <p class="lead"><em>click me!</em></p>
+            </button>
+            <button class="btn btn-danger btn-sm">
+                <p class="lead"><em>click me!</em></p>
+            </button>
+        </div>
+    </div>
+    <div class="w-100"></div>
+    <div class="container-fluid bg-success">
+            <p class="lead"><em class="h1">Button dropdown class</em></p>
+            <div class="btn-group">
+                <button class="btn btn-primary p-1">
+                    <p class="lead"><em>click!</em></p>
+                </button>
+                <button class="btn btn-secondary p-1">
+                    <p class="lead"><em>Click!</em></p>
+                </button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                        <p class="lead"><em>Click!</em></p>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">One</a></li>
+                            <li><a href="#" class="dropdown-item">Two</a></li>
+                        </ul>
+                    </button>
+                </div>
+            </div>
+    </div>
+    <div class="container-fluid bg-danger">
+        <p class="lead"><em>This is list group</em></p>
+        <ul class="list-group p-1">
+            <li class="list-group-item">One</li>
+            <li class="list-group-item">Two</li>
+            <li class="list-group-item">Three</li>
+            <li class="list-group-item">Four</li>
+        </ul>
+    </div>
+    <div class="w-100">
+        <br>
+    </div>
+    <div class="container-fluid">
+        <p class="lead"><em>This is list group of style list flush</em></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">One</li>
+            <li class="list-group-item">Two</li>
+            <li class="list-group-item">Three</li>
+            <li class="list-group-item">Four</li>
+        </ul>
+    </div>
+    <div class="w-100">
+        <br>
+    </div>
+    <div class="container-fluid">
+        <p class="lead"><em>This is list group of style list flush with colors</em></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-success">One</li>
+            <li class="list-group-item list-group-item-info">Two</li>
+            <li class="list-group-item list-group-item-warning">Three</li>
+            <li class="list-group-item list-group-item-danger">Four</li>
+        </ul>
+    </div>
+    <div class="w-100">
+        <br>
+    </div>
+    <div class="container-fluid">
+        <p class="lead"><em>This is list group of style list flush with colors</em></p>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item list-group-item-success">One</li>
+            <li class="list-group-item list-group-item-info">Two</li>
+            <li class="list-group-item list-group-item-warning">Three</li>
+            <li class="list-group-item list-group-item-danger">Four</li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <p class="lead"><em>This is list group of style list flush with colors</em></p>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-success">One</li>
+            <li class="list-group-item list-group-item-action list-group-item-info">Two</li>
+            <li class="list-group-item list-group-item-action list-group-item-warning">Three</li>
+            <li class="list-group-item list-group-item-action list-group-item-danger">Four</li>
+        </ul>
+    </div>
+
+</body>
+</html>
