@@ -50,7 +50,8 @@ $font_sizes:(
 
 @each $k,$v in $font-sizes
 {
-    .#{$k}-font{
+    .#{$k}-font
+    {
         font-size: map-get($map: $font_sizes, $key:$k );
     }
 }
