@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script>
+</head>
+
+<body>
+
+    <div class="begin">
+        <h2>GUESS MY NUMBER</h2>
+    </div>
+    <div class="difficultyChooser">
+        <h3>Choose your difficulty !!</h3>
+        <br>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap:1vh;">
+            <li><label for="easy"> EASY </label><input type="radio" name="difficulty" id="easy" oninput="setDifficulty(1)"></li>
+            <li><label for="easy"> MEDIUM </label><input type="radio" name="difficulty" id="medium" oninput="setDifficulty(2)"></li>
+            <li><label for="easy"> HARD </label><input type="radio" name="difficulty" id="hard" oninput="setDifficulty(3)"></li>
+            <li><label for="easy"> EXPERT </label><input type="radio" name="difficulty" id="expert" oninput="setDifficulty(4)"></li>   
+        </ul>
+        <p style="color: green; font-size: 30px;">EASY</p>
+        <br>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h3>Let's Role!</h3>
+            <p id="maxVal"></p>
+        </div>
+        <br>
+        <div class="line_break"></div>
+        <br>
+        <div class="game_area" style="display: flex; flex-direction: row; gap : 1rem;">
+            <label for="val" style="padding:2%; color:white; text-shadow: 2px 2px 3px black;">Enter the value : </label><input type="text" id="val" autocomplete="off" style="box-shadow:10px 10px 20px black;padding:2%; width: 100px;">
+            <button type="submit" style="width: 70px; height: 70px; display: flex; justify-content: center; align-items: center;" onclick="checkEquality()">&#8250;</button>
+        </div>
+        <br>
+        <div class="stats">
+            <div class="data" id="hint"><legend>Hint</legend><p>$$</p></div>
+            <div class="data" id="score"><legend>score</legend><p>0</p></div>
+            <div class="data" id="tries"><legend>tries</legend><p>4</p></div>
+        </div>
+    </div>
+    <div class="toggle">
+        <button onclick="toggle()">&#8594;</button>
+        <p>GAME ON</p>
+    </div>
+</body>
+
+</html>
