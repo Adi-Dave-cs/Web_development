@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__title">
+            <p>Add task</p>
+        </div>
+        <form>
+            <label for="task">Add task : </label> <input type="text" name="task" id="todo_task" autocomplete="off">
+            <label for="time">Add deadline : </label> <input type="datetime-local" name="time" id="todo_deadline" autocomplete="off">
+            <button id="task_submit">Add </button>
+            <button onclick="closeModal();">Cancel</button>
+        </form>
+    </div>
+    <div class="toast">
+    </div>
+    <div class="todo">
+        <div class="todo__header">
+            <p>TO DO LIST</p>
+        </div>
+        <div class="todo__add">
+            <button type="submit" onclick="addItem();">ADD</button>
+            <button id = "reset"> RESET </button>
+        </div>
+        <div class="container">
+            <ul class="container__list">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

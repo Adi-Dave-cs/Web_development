@@ -1,0 +1,172 @@
+.toast {
+  opacity: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  z-index: 99;
+  border-radius: 25px;
+  top: 90%;
+  right: -1%;
+  transform: translate(-50%, -50%);
+  transition: all 1s linear;
+  height: 3vh;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  width: 20vh;
+  background-color: rgb(223, 255, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(0, 0, 128), black);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo {
+  background-color: azure;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2vw;
+  width: 80vw;
+  height: 80vh;
+  box-shadow: 0 0 20px cyan;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.todo__header {
+  color: rgb(0, 0, 81);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  align-self: center;
+}
+.todo__add {
+  background-color: rgb(0, 0, 81);
+  color: azure;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5%;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 10px black, inset -5px -5px 10px white;
+}
+.todo__add button {
+  padding: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  border-radius: 25px;
+  color: rgb(0, 0, 81);
+}
+.todo .container {
+  overflow-y: scroll;
+}
+.todo .container__list {
+  padding: 5%;
+  border-radius: 25px;
+  list-style: none;
+  display: flex;
+  gap: 1vw;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.todo .container__list .list-item {
+  background-color: rgb(130, 213, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 25px;
+  border: 3px solid rgb(0, 0, 81);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 10px 10px 30px black, -10px -10px 100px white;
+}
+.todo .container__list .list-item .description {
+  display: flex;
+  gap: 5vw;
+  flex-direction: row;
+}
+.todo .container__list .list-item .changes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: bolder;
+  gap: 2rem;
+}
+.todo .container__list .list-item .changes .done button {
+  border: 3px solid green;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: green;
+}
+.todo .container__list .list-item .changes .remove button {
+  border: 3px solid red;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: red;
+}
+
+.item-display {
+  animation: displ 2s linear forwards;
+  transform-origin: left;
+}
+
+@keyframes displ {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.modal {
+  border: 5px solid rgb(0, 0, 128);
+  border-radius: 20px;
+  width: 70vw;
+  height: 70vh;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 5%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal__title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0px 0px black;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.modal form label {
+  color: rgb(0, 0, 81);
+  font-family: cursive;
+  font-size: 30px;
+}
+.modal form button {
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
