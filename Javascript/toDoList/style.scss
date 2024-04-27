@@ -181,10 +181,11 @@ body{
         display: flex;
         flex-direction: column;
         gap : 2vh;
+        color:rgb(255, 255, 255);
         & label
         {
-            color :rgb(0, 0, 81);
-            font-family:cursive;
+            color:rgb(255, 255, 255);
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 30px;
         }
         & button{
