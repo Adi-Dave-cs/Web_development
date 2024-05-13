@@ -44,7 +44,8 @@
         img{
             width: 10vw;
             height: 10vh;
-            object-fit: cover;
+            object-fit: fill;
+            object-position: center;
         }
     </style>
 </head>
@@ -52,7 +53,7 @@
     <h1 >API FETCH</h1>
     <button onclick="xhr_call();">Xhr usage</button>
     <button onclick="fetch_api();">fetch api</button>
-    <img class="dummy_image">
+    <img class="dummy_image" src="./ai-generated-8095071_640.png">
     <section class="response">Fetched Value : </section>
 </body>
 </html>
