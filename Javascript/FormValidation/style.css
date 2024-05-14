@@ -1,0 +1,118 @@
+:root{
+    --font:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:var(--font);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(188, 224, 255);
+}
+
+#upper
+{
+    background:linear-gradient(to top, blueviolet,rgb(68, 0, 95));
+    width: inherit;
+    height: calc(30%);
+}
+
+
+.card
+{
+    position: absolute ;
+    top : 50%;
+    left : 50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    translate: (-50%,-50%);
+    width: min(500px,80vw);
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgb(60, 95, 125);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 1rem;
+    overflow: hidden;
+}
+
+.card_section
+{
+    background-color: transparent;
+    width : min(400px,70vw);
+    height: max-content;
+    text-wrap: pretty;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(119, 118, 118, 0.347);
+}
+
+#question
+{
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    justify-content: space-between;
+}
+
+#answer
+{
+    text-align: justify;
+    display: none;
+}
+
+
+#title
+{
+    position: absolute;
+    top : 5%;
+    left: 10%;
+    height: 10vh;
+    display: flex;
+}
+
+#title > h1{
+    align-self: center;
+    height: max-content;
+    color: rgb(111, 14, 111);
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.card_section p{
+    align-self: center;
+    width: calc(85%);
+    height: max-content;
+}
+.card_section button{
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: purple;
+    align-self: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#fill_form
+{
+    margin-top: 100px;
+    background-color: purple;
+    color: white;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 20px;
+    box-shadow: 0 0 20px purple;
+}
+
+#fill_form:hover
+{
+    box-shadow: 0 0 0 purple;
+}
