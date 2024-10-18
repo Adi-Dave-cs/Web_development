@@ -1,0 +1,143 @@
+body {
+  background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.grid {
+  border-radius: 20px;
+  height: 70vh;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  box-shadow: 5px 5px 20px rgba(83, 83, 83, 0.609);
+}
+
+.grid_item1 {
+  position: relative;
+  border-radius: 20px;
+  height: inherit;
+  background: linear-gradient(to bottom, rgb(87, 78, 255), rgb(33, 25, 255));
+}
+
+.grid_item2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+#summary__heading {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  color: rgb(0, 0, 75);
+}
+
+.list__item {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  list-style: none;
+}
+
+.list__item li {
+  width: 100%;
+  height: 50px;
+  margin-left: -15%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.list__item li svg {
+  margin-left: 5px;
+}
+
+.list__item p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.submit__button {
+  background-color: rgba(0, 3, 57, 0.8);
+  width: 100%;
+  color: white;
+  border-radius: 30px;
+  padding: 5%;
+  margin-top: 10%;
+}
+
+.score {
+  color: rgba(0, 3, 57, 0.8);
+  position: absolute;
+  right: 5%;
+}
+
+.header {
+  color: rgba(219, 236, 255, 0.749);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.result_component {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom, rgb(33, 25, 255), rgb(87, 78, 255));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result_component p {
+  font-weight: bolder;
+  color: aliceblue;
+  font-size: 5vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.comment {
+  color: rgba(219, 236, 255, 0.749);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message {
+  color: rgba(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
