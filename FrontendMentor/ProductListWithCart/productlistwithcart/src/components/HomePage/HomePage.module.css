@@ -1,0 +1,205 @@
+.homepage {
+  width: 98vw;
+  height: 80vh;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.homeTitle {
+  background: linear-gradient(to bottom, aliceblue, rgb(118, 118, 135));
+  background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.badge {
+  background-color: aliceblue;
+  width: 8vw;
+  padding: 2px;
+  border-radius: 10px;
+  color: #000428;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.paragraph {
+  font-weight: bolder;
+  word-spacing: 12px;
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+  width: 40vw;
+  text-wrap: wrap;
+  background: linear-gradient(to bottom, rgb(76, 160, 164), white);
+  background-clip: text;
+  color: transparent;
+}
+
+.borderName {
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+.imageClass {
+  width: 30vw;
+  height: 30vh;
+}
+
+.imageCenter {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  object-fit: cover;
+}
+
+.imageTop {
+  position: absolute;
+  top: 30%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: cover;
+  scale: 0.8;
+}
+
+.imageBottom {
+  position: absolute;
+  top: 55%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: cover;
+  scale: 0.8;
+}
+
+img[data="image_data"] {
+  transition: all 600ms linear;
+  box-shadow: 0 0 20px 2px white;
+}
+
+img[data="image_data"]:hover {
+  z-index: 3;
+  scale: 1.2;
+}
+
+img[data="image_data"]:has(~ img:hover),
+img[data="image_data"]:hover ~ img {
+  filter: blur(5px);
+}
+
+.submitButton {
+  position: absolute;
+  top: 68%;
+  left: 0%;
+  transform: translateY(-50%);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.67);
+  background: linear-gradient(to bottom, #000428, #004e92);
+  height: 8vh;
+  width: 10vw;
+  font-weight: bolder;
+  font-size: large;
+  box-shadow: 0 0 10px 1px rgb(142, 142, 142);
+  border-radius: 20px;
+}
+
+.loading {
+  border-radius: 50%;
+  border-top: 3px solid rgba(255, 255, 255, 1);
+  border-left: 3px solid rgba(255, 255, 255, 0);
+  border-right: 3px solid rgb(255, 255, 255, 0);
+  border-bottom: 3px solid rgb(255, 255, 255, 0);
+  animation: rotate infinite linear 800ms;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .homeTitle {
+    font-size: 35px;
+  }
+
+  .submitButton {
+    width: 12vw;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .homeTitle {
+    width: 70vw;
+    font-size: 30px;
+    text-wrap: wrap;
+  }
+
+  .paragraph {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .submitButton {
+    top: 72%;
+    width: 13vw;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeTitle {
+    width: 70vw;
+    font-size: 25px;
+    text-wrap: wrap;
+  }
+
+  .paragraph {
+    top: 60%;
+    font-size: 15px;
+    width: 50vw;
+  }
+
+  .submitButton {
+    top: 80%;
+    width: 30vw;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .homeTitle {
+    width: 60vw;
+    font-size: 20px;
+    text-wrap: wrap;
+  }
+
+  .paragraph {
+    top: 65%;
+    font-size: 15px;
+    width: 50vw;
+  }
+
+  .submitButton {
+    top: 90%;
+    width: 30vw;
+    font-size: small;
+  }
+}

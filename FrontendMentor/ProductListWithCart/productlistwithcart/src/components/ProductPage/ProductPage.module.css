@@ -1,0 +1,291 @@
+.productpage {
+  width: 100vw;
+  position: relative;
+  overflow-y: scroll;
+  top: 55%;
+  transform: translateY(-50%);
+  scroll-behavior: smooth;
+  height: 100%;
+  padding: 1%;
+}
+
+.productpage::-webkit-scrollbar {
+  background: transparent; /* Light gray background */
+  border-radius: 10px;
+  width: 10px;
+}
+
+/* Thumb (scrollable part of the scrollbar) */
+.productpage::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    aqua
+  ); /* Dark gray thumb */
+  border-radius: 10px;
+}
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 1%;
+}
+
+.listStyleNone {
+  list-style: none;
+}
+
+.form {
+  background-color: aliceblue;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  height: 50vh;
+  border-radius: 20px;
+  color: white;
+}
+
+.formHeader {
+  background: linear-gradient(155deg, navy, blue);
+  color: transparent;
+  background-clip: text;
+  font-weight: bolder;
+  font-size: 40px;
+  justify-self: center;
+}
+
+.closeButton {
+  position: absolute;
+  background-color: rgb(67, 55, 55);
+  border: 3px solid rgb(0, 0, 0);
+  width: 60px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  border-radius: 17px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  bottom: 0%;
+  right: 0%;
+}
+
+@media screen and (max-width: 1023px) {
+  .productpage {
+    top: 55%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .productpage {
+    top: 65%;
+    transform: translateY(-50%);
+    padding: 2%;
+  }
+
+  .product {
+    width: 90vw;
+    height: 250px;
+    gap: 0.25rem;
+  }
+
+  .image {
+    height: 300px;
+  }
+
+  .card {
+    height: 150px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .overlay {
+    font-size: 10px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .inquiry {
+    font-size: 12px;
+  }
+}
+
+.productcard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background: linear-gradient(to top, white, rgb(0, 67, 103));
+}
+
+.productcard:hover {
+  transform: translateY(-5px);
+}
+
+.productimage {
+  width: 100%;
+  height: 250px;
+}
+
+.productinfo {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.producttitle {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin: 0 0 8px 0;
+  color: #000;
+}
+
+.productdescription {
+  font-size: 0.875rem;
+  color: #000;
+  margin: 0 0 16px 0;
+  flex-grow: 1;
+}
+
+.productfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productprice {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.inquirybutton {
+  background-color: black;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.inquirybutton:hover {
+  background-color: #2980b9;
+}
+
+.more {
+  background-color: black;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.more:hover {
+  background-color: #2980b9;
+}
+
+.searchbar {
+  width: 30vw;
+  height: 5vh;
+  margin-bottom: 2%;
+}
+
+.quantity {
+  width: 10vw;
+  height: 5vh;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+.quantity select {
+  width: 8vw;
+  border: 2px solid white;
+  font-weight: bolder;
+}
+
+.filterComponent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  height: 5vh;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  border-radius: 5px;
+  width: 2vw;
+  height: 3vh;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.searchButton {
+  background-color: black;
+  color: #ffffff;
+  font-weight: bolder;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 768px) {
+  .filterComponent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .productcard {
+    max-width: 100%;
+  }
+
+  .searchbar {
+    margin-bottom: 10%;
+  }
+
+  .quantity {
+    margin-right: 15%;
+    width: 7vw;
+    height: 2vh;
+  }
+
+  .quantity select {
+    width: 5vw;
+  }
+
+  .page {
+    width: 5vw;
+    height: 3vh;
+  }
+}

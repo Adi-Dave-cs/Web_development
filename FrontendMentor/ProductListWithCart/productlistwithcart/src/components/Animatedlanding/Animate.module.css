@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.coverPage {
+  position: absolute;
+  background: linear-gradient(to top, #000428, #004e92);
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+  margin: 0;
+  padding: 0%;
+}
+
+.cover__title {
+  background-color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+  background-clip: text;
+  color: transparent;
+  font-family: "Agdasima", serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cover__tagline {
+  font-family: "Press Start 2P";
+  color: white;
+  font-size: medium;
+  font-weight: lighter;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.date_time {
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  font-family: "Press Start 2P", system-ui;
+  font-size: medium;
+  font-weight: lighter;
+  color: white;
+}
+
+.line {
+  background-color: white;
+  width: 60vw;
+  height: 0.5vh;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.rectangle {
+  position: absolute;
+  right: 10%;
+  top: 0%;
+  transform: translateX(50%);
+  background-color: aliceblue;
+  width: 10vw;
+  height: 95vh;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.circle {
+  position: absolute;
+  right: 10%;
+  top: 85%;
+  transform: translate(50%, -50%);
+  background-color: #000428;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1440px) {
+  .circle {
+    top: 87%;
+  }
+}
+
+@media screen and (max-width: 1256px) {
+  .circle {
+    top: 87%;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .circle {
+    top: 88%;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .circle {
+    top: 87%;
+    width: 25px;
+    height: 25px;
+  }
+
+  .circle > svg {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .line {
+    width: 20vw;
+  }
+
+  .date_time {
+    left: 20%;
+    font-size: small;
+  }
+
+  .cover__title {
+    font-size: medium;
+  }
+
+  .cover__tagline {
+    font-size: small;
+    left: 55%;
+  }
+
+  .circle > svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .rectangle {
+    height: 90vh;
+  }
+}
