@@ -8,6 +8,7 @@ This is a project which uses vanilla css and html for designing the skeleton of 
 - Getting Started
 - Project Structure
 - What are the concepts involved?
+- Demo
 
 ## Introduction
 
@@ -39,3 +40,10 @@ To get started with any of the projects, follow the instructions below.
     2. GSAP timeline for sequential execution of animations
     3. Stagger is a technique used in animations where elements animate sequentially with a small delay between each. Instead of all elements animating at once, they appear one after another, creating a smooth and natural effect.
     4. Expo.easeInOut is an easing function in GSAP (GreenSock) that creates a smooth acceleration and deceleration effect in animations. It starts slow, speeds up rapidly, and then slows down before stopping.
+
+## Demo
+
+
+
+https://github.com/user-attachments/assets/11c4f806-438e-4057-a7c5-3b052850af1e
+
